@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+from properties.settings.cache_settings import * #Redis Configuration and Cache settings
 
 # Load environment variables from .env file
 load_dotenv()
