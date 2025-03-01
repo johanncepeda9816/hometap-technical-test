@@ -1,6 +1,6 @@
 import { ErrorResponse } from "./errors";
 
-interface Provider1Response {
+export interface Provider1Response {
   data: {
     id: string;
     formattedAddress: string;
@@ -74,7 +74,7 @@ interface Provider1Response {
   cached: boolean;
 }
 
-interface Provider2Response {
+export interface Provider2Response {
   data: {
     ID: string;
     NormalizedAddress: string;
@@ -105,6 +105,21 @@ interface Provider2Response {
   cached: boolean;
 }
 
-type ProviderResponse = Provider1Response | Provider2Response | ErrorResponse;
+interface NormalizedResponse {
+  provider: "Provider 1" | "Provider 2";
+  propertyType: string;
+  yearBuilt: number;
+  squareFootage: number;
+  lotSizeAcres: number;
+  bedrooms: number;
+  bathrooms: number;
+  roomCount: number;
+  septicSystem: boolean;
+  salePrice: number;
+  cached: boolean;
+  error: string;
+}
+
+type ProviderResponse = NormalizedResponse[] & ErrorResponse;
 
 export default ProviderResponse;

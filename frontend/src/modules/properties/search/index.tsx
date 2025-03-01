@@ -18,6 +18,7 @@ export const SearchPropertiesScreen = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           placeholder="Enter full address, including street, city, state, and zip"
           className="p-3 border border-gray-300 rounded-md w-[600px]"
+          disabled={loading}
         />
         <button
           onClick={handleSearch}
@@ -30,11 +31,7 @@ export const SearchPropertiesScreen = () => {
       {loading && <LoadingComponent />}
 
       {apiResponse && (
-        <ResultsTable
-          propertyData={apiResponse}
-          address={searchTerm}
-          error={""}
-        />
+        <ResultsTable propertyData={apiResponse} address={searchTerm} />
       )}
     </div>
   );
