@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { fetchPropertyDetails } from "./property";
-import { BACKEND_API_URL, PROPERTIES_ENDPOINT } from "../constants";
+import { PROPERTIES_ENDPOINT, BACKEND_API_URL } from "../../constants";
+import { fetchPropertyDetails } from "../../services/property";
 
 describe("fetchPropertyDetails", () => {
   const mockBackendApiUrl = "http://localhost:3000";
