@@ -1289,3 +1289,926 @@ Final data from provider Provider 2: {
   "cached": false
 }
 Cached data for property:5cbe8b23c1f9a1459e1407e3e82d7038 with TTL 86400s
+Watching for file changes with StatReloader
+Processing request for address: ST, Louis
+Cache miss for property:bb6374f1db6897aaf6566a441764a4c8
+No cache found for ST, Louis. Fetching from providers...
+Starting data fetch from 2 providers for address: ST, Louis
+Processing provider: provider1
+Cache miss for property:bb6374f1db6897aaf6566a441764a4c8:provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Cache miss for property:bb6374f1db6897aaf6566a441764a4c8:provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=ST%2C+Louis HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "-Unknown-ST-LOUIS-00000",
+    "formattedAddress": " Unknown ST, LOUIS 00000",
+    "addressLine1": "",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "ST, LOUIS",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.340433,
+    "longitude": -84.145109,
+    "propertyType": "Townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFootage": 3709,
+    "lotSizeSqFt": 5231,
+    "yearBuilt": 1922,
+    "assessorID": "57098-608-9280",
+    "legalDescription": "CB 9991 BLK 8 LOT 81",
+    "subdivision": "Subdivision A",
+    "zoning": "RH",
+    "lastSaleDate": "2013-06-05T00:00:00.000Z",
+    "lastSalePrice": 224669,
+    "hoa": {
+      "fee": 385
+    },
+    "features": {
+      "architectureType": "Contemporary",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Vinyl",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Slab",
+      "garage": true,
+      "garageSpaces": 2,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Radiant",
+      "pool": true,
+      "poolType": "Vinyl",
+      "roofType": "Tile",
+      "roomCount": 9,
+      "unitCount": 1,
+      "viewType": "Water",
+      "septicSystem": false
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 329797,
+        "land": 27035,
+        "improvements": 316478
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 9427
+      }
+    },
+    "history": {
+      "2015-03-11": {
+        "event": "Sale",
+        "date": "2019-09-04T00:00:00.000Z",
+        "price": 474271
+      }
+    }
+  },
+  "cached": false
+}
+Waiting for response from provider2 (timeout: 30s)
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=ST%2C+Louis HTTP/1.1" 200 None
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "-Unknown-ST-LOUIS-00000",
+    "NormalizedAddress": " Unknown ST, LOUIS 00000",
+    "Address1": "",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "ST, LOUIS",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Contemporary",
+    "PropertyType": "Townhouse",
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "SquareFootage": 3709,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1922,
+    "HomeownerAssociationFee": 385,
+    "LastSaleDate": "2013-06-05T00:00:00.000Z",
+    "LastSalePrice": 224669,
+    "RoomCount": 9,
+    "UnitCount": 1,
+    "GarageSpaces": 2,
+    "GarageType": "Attached",
+    "SepticSystem": false,
+    "Cooling": "Central",
+    "Heating": "Radiant",
+    "SalePrice": 224669
+  },
+  "cached": true
+}
+Completed data fetch from all providers for address: ST, Louis
+Raw result from provider1: {
+  "data": {
+    "id": "-Unknown-ST-LOUIS-00000",
+    "formattedAddress": " Unknown ST, LOUIS 00000",
+    "addressLine1": "",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "ST, LOUIS",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.340433,
+    "longitude": -84.145109,
+    "propertyType": "Townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "squareFootage": 3709,
+    "lotSizeSqFt": 5231,
+    "yearBuilt": 1922,
+    "assessorID": "57098-608-9280",
+    "legalDescription": "CB 9991 BLK 8 LOT 81",
+    "subdivision": "Subdivision A",
+    "zoning": "RH",
+    "lastSaleDate": "2013-06-05T00:00:00.000Z",
+    "lastSalePrice": 224669,
+    "hoa": {
+      "fee": 385
+    },
+    "features": {
+      "architectureType": "Contemporary",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Vinyl",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Slab",
+      "garage": true,
+      "garageSpaces": 2,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Radiant",
+      "pool": true,
+      "poolType": "Vinyl",
+      "roofType": "Tile",
+      "roomCount": 9,
+      "unitCount": 1,
+      "viewType": "Water",
+      "septicSystem": false
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 329797,
+        "land": 27035,
+        "improvements": 316478
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 9427
+      }
+    },
+    "history": {
+      "2015-03-11": {
+        "event": "Sale",
+        "date": "2019-09-04T00:00:00.000Z",
+        "price": 474271
+      }
+    }
+  },
+  "cached": false
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "-Unknown-ST-LOUIS-00000",
+    "NormalizedAddress": " Unknown ST, LOUIS 00000",
+    "Address1": "",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "ST, LOUIS",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Contemporary",
+    "PropertyType": "Townhouse",
+    "Bedrooms": 1,
+    "Bathrooms": 1,
+    "SquareFootage": 3709,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1922,
+    "HomeownerAssociationFee": 385,
+    "LastSaleDate": "2013-06-05T00:00:00.000Z",
+    "LastSalePrice": 224669,
+    "RoomCount": 9,
+    "UnitCount": 1,
+    "GarageSpaces": 2,
+    "GarageType": "Attached",
+    "SepticSystem": false,
+    "Cooling": "Central",
+    "Heating": "Radiant",
+    "SalePrice": 224669
+  },
+  "cached": true
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x105aa4b80>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 3709,
+  "lot_size_acres": 0.12,
+  "year_built": 1922,
+  "property_type": "Townhouse",
+  "bedrooms": 1,
+  "bathrooms": 1,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 224669,
+  "sale_price_formatted": "$224,669",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Cached data for property:bb6374f1db6897aaf6566a441764a4c8:provider1 with TTL 86400s
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 3709,
+  "lot_size_acres": 0.12,
+  "year_built": 1922,
+  "property_type": "Townhouse",
+  "bedrooms": 1,
+  "bathrooms": 1,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 224669,
+  "sale_price_formatted": "$224,669",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Cached data for property:bb6374f1db6897aaf6566a441764a4c8:provider2 with TTL 86400s
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 3709,
+  "lot_size_acres": 0.12,
+  "year_built": 1922,
+  "property_type": "Townhouse",
+  "bedrooms": 1,
+  "bathrooms": 1.0,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 224669,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 3709,
+  "lot_size_acres": 0.12,
+  "year_built": 1922,
+  "property_type": "Townhouse",
+  "bedrooms": 1,
+  "bathrooms": 1.0,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 224669,
+  "provider": "Provider 2",
+  "cached": false
+}
+Cached data for property:bb6374f1db6897aaf6566a441764a4c8 with TTL 86400s
+Processing request for address: ST, Louis
+Cache hit for property:bb6374f1db6897aaf6566a441764a4c8
+Returning cached results for address: ST, Louis
+Cached data content: [
+  {
+    "square_footage": 3709,
+    "lot_size_acres": 0.12,
+    "year_built": 1922,
+    "property_type": "Townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "room_count": 9,
+    "septic_system": "No",
+    "sale_price": 224669,
+    "provider": "Provider 1",
+    "cached": false
+  },
+  {
+    "square_footage": 3709,
+    "lot_size_acres": 0.12,
+    "year_built": 1922,
+    "property_type": "Townhouse",
+    "bedrooms": 1,
+    "bathrooms": 1.0,
+    "room_count": 9,
+    "septic_system": "No",
+    "sale_price": 224669,
+    "provider": "Provider 2",
+    "cached": false
+  }
+]
+Cached result from provider: Provider 1
+Cached result from provider: Provider 2
+Processing request for address: Tampa, Florida
+Cache hit for property:24f40f3aa97bd5a6a68f107fbefb3a19
+Returning cached results for address: Tampa, Florida
+Cached data content: [
+  {
+    "square_footage": 1204,
+    "lot_size_acres": 0.12,
+    "year_built": 1952,
+    "property_type": "Condo",
+    "bedrooms": 2,
+    "bathrooms": 2.0,
+    "room_count": 4,
+    "septic_system": "Yes",
+    "sale_price": 350353,
+    "provider": "Provider 1",
+    "cached": false
+  },
+  {
+    "square_footage": 1204,
+    "lot_size_acres": 0.12,
+    "year_built": 1952,
+    "property_type": "Condo",
+    "bedrooms": 2,
+    "bathrooms": 2.0,
+    "room_count": 4,
+    "septic_system": "Yes",
+    "sale_price": 350353,
+    "provider": "Provider 2",
+    "cached": false
+  }
+]
+Cached result from provider: Provider 1
+Cached result from provider: Provider 2
+Watching for file changes with StatReloader
+Processing request for address: Tampa
+No cache found for Tampa. Fetching from providers...
+Starting data fetch from 2 providers for address: Tampa
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=Tampa HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "-Tampa-UNKNOWN-00000",
+    "formattedAddress": " Tampa UNKNOWN 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Tampa",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.566146,
+    "longitude": -84.546089,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFootage": 2224,
+    "lotSizeSqFt": 5068,
+    "yearBuilt": 1923,
+    "assessorID": "90258-308-9937",
+    "legalDescription": "CB 5200 BLK 3 LOT 74",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2003-04-10T00:00:00.000Z",
+    "lastSalePrice": 252371,
+    "hoa": {
+      "fee": 399
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Concrete",
+      "roofType": "Asphalt",
+      "roomCount": 9,
+      "unitCount": 5,
+      "viewType": "Water",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 354122,
+        "land": 99114,
+        "improvements": 366663
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 7946
+      }
+    },
+    "history": {
+      "2017-04-07": {
+        "event": "Sale",
+        "date": "2022-06-01T00:00:00.000Z",
+        "price": 492598
+      }
+    }
+  },
+  "cached": false
+}
+Waiting for response from provider2 (timeout: 30s)
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=Tampa HTTP/1.1" 200 None
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "-Tampa-UNKNOWN-00000",
+    "NormalizedAddress": " Tampa UNKNOWN 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Tampa",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 2224,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1923,
+    "HomeownerAssociationFee": 399,
+    "LastSaleDate": "2003-04-10T00:00:00.000Z",
+    "LastSalePrice": 252371,
+    "RoomCount": 9,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 252371
+  },
+  "cached": true
+}
+Completed data fetch from all providers for address: Tampa
+Raw result from provider1: {
+  "data": {
+    "id": "-Tampa-UNKNOWN-00000",
+    "formattedAddress": " Tampa UNKNOWN 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Tampa",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.566146,
+    "longitude": -84.546089,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFootage": 2224,
+    "lotSizeSqFt": 5068,
+    "yearBuilt": 1923,
+    "assessorID": "90258-308-9937",
+    "legalDescription": "CB 5200 BLK 3 LOT 74",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2003-04-10T00:00:00.000Z",
+    "lastSalePrice": 252371,
+    "hoa": {
+      "fee": 399
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Concrete",
+      "roofType": "Asphalt",
+      "roomCount": 9,
+      "unitCount": 5,
+      "viewType": "Water",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 354122,
+        "land": 99114,
+        "improvements": 366663
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 7946
+      }
+    },
+    "history": {
+      "2017-04-07": {
+        "event": "Sale",
+        "date": "2022-06-01T00:00:00.000Z",
+        "price": 492598
+      }
+    }
+  },
+  "cached": false
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "-Tampa-UNKNOWN-00000",
+    "NormalizedAddress": " Tampa UNKNOWN 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Tampa",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 2224,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1923,
+    "HomeownerAssociationFee": 399,
+    "LastSaleDate": "2003-04-10T00:00:00.000Z",
+    "LastSalePrice": 252371,
+    "RoomCount": 9,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 252371
+  },
+  "cached": true
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x103344c20>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "sale_price_formatted": "$252,371",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "sale_price_formatted": "$252,371",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "provider": "Provider 2",
+  "cached": false
+}
+Processing request for address: Tampa
+No cache found for Tampa. Fetching from providers...
+Starting data fetch from 2 providers for address: Tampa
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=Tampa HTTP/1.1" 200 None
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=Tampa HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "-Tampa-UNKNOWN-00000",
+    "formattedAddress": " Tampa UNKNOWN 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Tampa",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.566146,
+    "longitude": -84.546089,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFootage": 2224,
+    "lotSizeSqFt": 5068,
+    "yearBuilt": 1923,
+    "assessorID": "90258-308-9937",
+    "legalDescription": "CB 5200 BLK 3 LOT 74",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2003-04-10T00:00:00.000Z",
+    "lastSalePrice": 252371,
+    "hoa": {
+      "fee": 399
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Concrete",
+      "roofType": "Asphalt",
+      "roomCount": 9,
+      "unitCount": 5,
+      "viewType": "Water",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 354122,
+        "land": 99114,
+        "improvements": 366663
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 7946
+      }
+    },
+    "history": {
+      "2017-04-07": {
+        "event": "Sale",
+        "date": "2022-06-01T00:00:00.000Z",
+        "price": 492598
+      }
+    }
+  },
+  "cached": true
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "-Tampa-UNKNOWN-00000",
+    "NormalizedAddress": " Tampa UNKNOWN 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Tampa",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 2224,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1923,
+    "HomeownerAssociationFee": 399,
+    "LastSaleDate": "2003-04-10T00:00:00.000Z",
+    "LastSalePrice": 252371,
+    "RoomCount": 9,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 252371
+  },
+  "cached": true
+}
+Completed data fetch from all providers for address: Tampa
+Raw result from provider1: {
+  "data": {
+    "id": "-Tampa-UNKNOWN-00000",
+    "formattedAddress": " Tampa UNKNOWN 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Tampa",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.566146,
+    "longitude": -84.546089,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFootage": 2224,
+    "lotSizeSqFt": 5068,
+    "yearBuilt": 1923,
+    "assessorID": "90258-308-9937",
+    "legalDescription": "CB 5200 BLK 3 LOT 74",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2003-04-10T00:00:00.000Z",
+    "lastSalePrice": 252371,
+    "hoa": {
+      "fee": 399
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Concrete",
+      "roofType": "Asphalt",
+      "roomCount": 9,
+      "unitCount": 5,
+      "viewType": "Water",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 354122,
+        "land": 99114,
+        "improvements": 366663
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 7946
+      }
+    },
+    "history": {
+      "2017-04-07": {
+        "event": "Sale",
+        "date": "2022-06-01T00:00:00.000Z",
+        "price": 492598
+      }
+    }
+  },
+  "cached": true
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "-Tampa-UNKNOWN-00000",
+    "NormalizedAddress": " Tampa UNKNOWN 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Tampa",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 2,
+    "SquareFootage": 2224,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1923,
+    "HomeownerAssociationFee": 399,
+    "LastSaleDate": "2003-04-10T00:00:00.000Z",
+    "LastSalePrice": 252371,
+    "RoomCount": 9,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 252371
+  },
+  "cached": true
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x103344c20>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "sale_price_formatted": "$252,371",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "sale_price_formatted": "$252,371",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 2224,
+  "lot_size_acres": 0.12,
+  "year_built": 1923,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "room_count": 9,
+  "septic_system": "Yes",
+  "sale_price": 252371,
+  "provider": "Provider 2",
+  "cached": false
+}
