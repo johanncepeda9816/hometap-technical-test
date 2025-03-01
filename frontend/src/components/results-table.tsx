@@ -15,6 +15,7 @@ export const ResultsTable = ({ propertyData, address }: ResultsTableProps) => {
       key: string;
       label: string;
       formatter?: (value: any) => string;
+      icon?: React.ReactNode;
     }
   ) => {
     if (item && field.key in item) {
@@ -75,7 +76,12 @@ export const ResultsTable = ({ propertyData, address }: ResultsTableProps) => {
                     <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                       {group.fields.map((field, fieldIndex) => (
                         <div key={fieldIndex} className="flex flex-col">
-                          <dt className="text-sm font-medium text-gray-500 mb-1">
+                          <dt className="text-sm font-medium text-gray-500 mb-1 flex items-center">
+                            {field.icon && (
+                              <span className="mr-2 text-gray-400">
+                                {field.icon}
+                              </span>
+                            )}
                             {field.label}
                           </dt>
                           <dd className="text-sm text-gray-900">
