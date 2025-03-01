@@ -45,10 +45,7 @@ The application exposes a single endpoint using the GET method to retrieve the p
 ## 🎥 Demo
 
 <div align="center">
-<video width="600" controls>
-    <source src="https://github.com/johanncepeda9816/hometap-technical-test/blob/main/assets/demo.gif" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+  <img src="./assets/demo.gif" alt="Demo of the application" width="600" />
 </div>
 
 ## 📊 Diagrams
