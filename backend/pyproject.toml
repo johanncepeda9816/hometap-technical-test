@@ -21,6 +21,8 @@ idna = "^3.10"
 redis = "^5.2.1"
 sqlparse = "^0.5.3"
 urllib3 = "^2.3.0"
+pylint = "^3.3.4"
+graphviz = "^0.20.3"
 
 [build-system]
 requires = ["poetry-core"]

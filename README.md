@@ -14,29 +14,30 @@ At Hometap, we help homeowners access their homes' equity without increasing the
 Build a simple application with the following components:
 
 1. Backend Service
-    - Create a Python-based web service (using libraries like Flask, FastAPI, or Django) that integrates with the provided third-party APIs to retrieve property details from two of our AVM providers.
-    - Expose a single endpoint that standardizes the responses received from both providers into a single, consistent response.
-    - Consider maintainability by designing the service to make it easy to swap out the third-party APIs in the future.
+
+   - Create a Python-based web service (using libraries like Flask, FastAPI, or Django) that integrates with the provided third-party APIs to retrieve property details from two of our AVM providers.
+   - Expose a single endpoint that standardizes the responses received from both providers into a single, consistent response.
+   - Consider maintainability by designing the service to make it easy to swap out the third-party APIs in the future.
 
 2. Frontend Interface
-    - Create a minimal web page using a framework of your choice (React, Vue.js, or plain HTML/JavaScript).
-    - The page should:
-        - Allow the user to input an address.
-        - Display a subset of the property details for both providers for easy review (see mock below).
-        - Retrieve all relevant data from the API constructed in Part 1.
-    - Typically, our design team provides clear guidance on how user interfaces should look and operate; however, given that this is a proof-of-concept, we only have a simple mockup to work with.
+   - Create a minimal web page using a framework of your choice (React, Vue.js, or plain HTML/JavaScript).
+   - The page should:
+     - Allow the user to input an address.
+     - Display a subset of the property details for both providers for easy review (see mock below).
+     - Retrieve all relevant data from the API constructed in Part 1.
+   - Typically, our design team provides clear guidance on how user interfaces should look and operate; however, given that this is a proof-of-concept, we only have a simple mockup to work with.
 
 ![Provider 1 and 2 Layout](assets/Provider1_2.png)
 
 3. Bonus (OPTIONAL)
-    - Add simple error handling (e.g., display an error message if the API call fails).
-    - Style the page with essential CSS for a more polished appearance.
+   - Add simple error handling (e.g., display an error message if the API call fails).
+   - Style the page with essential CSS for a more polished appearance.
 
 ## Deliverables
 
 1. A Github repository with:
-    - The code for both the backend and frontend.
-    - A README with clear setup instructions and explanations of your design choices.
+   - The code for both the backend and frontend.
+   - A README with clear setup instructions and explanations of your design choices.
 
 ## Notes
 
@@ -66,7 +67,7 @@ For this exercise, you will integrate with two property details providers, Provi
 
 **API Endpoint:** https://property-detail-api.fly.dev/provider-1/property
 
-**API Key:**  3e1a9f18-86c7-4e11-babe-4fd2c7e5e12d
+**API Key:** 3e1a9f18-86c7-4e11-babe-4fd2c7e5e12d
 
 #### Example Usage (cURL)
 
@@ -78,77 +79,77 @@ $ curl -X GET "https://property-detail-api.fly.dev/provider-1/property?address=1
 
 ```json
 {
-   "data": {
-       "id": "5000-Main-Street-Boston-MA-144124",
-       "formattedAddress": "5000 Main Street Boston MA 144124",
-       "addressLine1": "5000 Main Street",
-       "addressLine2": "Suite 10",
-       "city": "Boston",
-       "state": "MA",
-       "zipCode": "144124",
-       "county": "Unknown",
-       "latitude": 35.181241,
-       "longitude": -84.753462,
-       "propertyType": "Townhouse",
-       "bedrooms": 2,
-       "bathrooms": 4,
-       "squareFootage": 1911,
-       "lotSizeSqFt": 7778,
-       "yearBuilt": 1924,
-       "assessorID": "94863-882-8791",
-       "legalDescription": "CB 6641 BLK 10 LOT 18",
-       "subdivision": "None",
-       "zoning": "RM",
-       "lastSaleDate": "2004-06-06T00:00:00.000Z",
-       "lastSalePrice": 262181,
-       "hoa": {
-           "fee": 475
-       },
-       "features": {
-           "architectureType": "Colonial",
-           "cooling": true,
-           "coolingType": "Window Unit",
-           "exteriorType": "Brick",
-           "fireplace": true,
-           "fireplaceType": "Prefabricated",
-           "floorCount": 3,
-           "foundationType": "Basement",
-           "garage": true,
-           "garageSpaces": 2,
-           "garageType": "Detached",
-           "heating": true,
-           "heatingType": "Electric",
-           "pool": false,
-           "poolType": "Concrete",
-           "roofType": "Metal",
-           "roomCount": 3,
-           "unitCount": 3,
-           "viewType": "Mountain",
-           "septicSystem": false
-       },
-       "taxAssessments": {
-           "2023": {
-               "year": 2023,
-               "value": 167224,
-               "land": 70250,
-               "improvements": 371579
-           }
-       },
-       "propertyTaxes": {
-           "2023": {
-               "year": 2023,
-               "total": 4761
-           }
-       },
-       "history": {
-           "2021-01-28": {
-               "event": "Sale",
-               "date": "2018-09-16T00:00:00.000Z",
-               "price": 498233
-           }
-       }
-   },
-   "cached": false
+  "data": {
+    "id": "5000-Main-Street-Boston-MA-144124",
+    "formattedAddress": "5000 Main Street Boston MA 144124",
+    "addressLine1": "5000 Main Street",
+    "addressLine2": "Suite 10",
+    "city": "Boston",
+    "state": "MA",
+    "zipCode": "144124",
+    "county": "Unknown",
+    "latitude": 35.181241,
+    "longitude": -84.753462,
+    "propertyType": "Townhouse",
+    "bedrooms": 2,
+    "bathrooms": 4,
+    "squareFootage": 1911,
+    "lotSizeSqFt": 7778,
+    "yearBuilt": 1924,
+    "assessorID": "94863-882-8791",
+    "legalDescription": "CB 6641 BLK 10 LOT 18",
+    "subdivision": "None",
+    "zoning": "RM",
+    "lastSaleDate": "2004-06-06T00:00:00.000Z",
+    "lastSalePrice": 262181,
+    "hoa": {
+      "fee": 475
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Window Unit",
+      "exteriorType": "Brick",
+      "fireplace": true,
+      "fireplaceType": "Prefabricated",
+      "floorCount": 3,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 2,
+      "garageType": "Detached",
+      "heating": true,
+      "heatingType": "Electric",
+      "pool": false,
+      "poolType": "Concrete",
+      "roofType": "Metal",
+      "roomCount": 3,
+      "unitCount": 3,
+      "viewType": "Mountain",
+      "septicSystem": false
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 167224,
+        "land": 70250,
+        "improvements": 371579
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 4761
+      }
+    },
+    "history": {
+      "2021-01-28": {
+        "event": "Sale",
+        "date": "2018-09-16T00:00:00.000Z",
+        "price": 498233
+      }
+    }
+  },
+  "cached": false
 }
 ```
 
@@ -156,7 +157,7 @@ $ curl -X GET "https://property-detail-api.fly.dev/provider-1/property?address=1
 
 **API Endpoint:** https://property-detail-api.fly.dev/provider-2/property
 
-**API Key:**  9f3b5c32-77a4-423c-b63f-90c123e6c1a8
+**API Key:** 9f3b5c32-77a4-423c-b63f-90c123e6c1a8
 
 #### Example Usage (cURL)
 
@@ -168,33 +169,33 @@ $ curl -X GET "https://property-detail-api.fly.dev/provider-2/property?address=1
 
 ```json
 {
-   "data": {
-       "ID": "5000-Main-Street-Boston-MA-144124",
-       "NormalizedAddress": "5000 Main Street Boston MA 144124",
-       "Address1": "5000 Main Street",
-       "Address2": null,
-       "City": "Boston",
-       "State": "MA",
-       "PostalCode": "144124",
-       "ArchitecturalStyle": "Ranch",
-       "PropertyType": "Single Family",
-       "Bedrooms": 2,
-       "Bathrooms": 4,
-       "SquareFootage": 1521,
-       "LotSizeAcres": 0.19,
-       "YearConstructed": 1922,
-       "HomeownerAssociationFee": 370,
-       "LastSaleDate": "2018-11-28T00:00:00.000Z",
-       "LastSalePrice": 135147,
-       "RoomCount": 3,
-       "UnitCount": 2,
-       "GarageSpaces": 3,
-       "GarageType": "Attached",
-       "SepticSystem": true,
-       "Cooling": "Central",
-       "Heating": "Radiant",
-       "SalePrice": 135147
-   },
-   "cached": false
+  "data": {
+    "ID": "5000-Main-Street-Boston-MA-144124",
+    "NormalizedAddress": "5000 Main Street Boston MA 144124",
+    "Address1": "5000 Main Street",
+    "Address2": null,
+    "City": "Boston",
+    "State": "MA",
+    "PostalCode": "144124",
+    "ArchitecturalStyle": "Ranch",
+    "PropertyType": "Single Family",
+    "Bedrooms": 2,
+    "Bathrooms": 4,
+    "SquareFootage": 1521,
+    "LotSizeAcres": 0.19,
+    "YearConstructed": 1922,
+    "HomeownerAssociationFee": 370,
+    "LastSaleDate": "2018-11-28T00:00:00.000Z",
+    "LastSalePrice": 135147,
+    "RoomCount": 3,
+    "UnitCount": 2,
+    "GarageSpaces": 3,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Radiant",
+    "SalePrice": 135147
+  },
+  "cached": false
 }
 ```
