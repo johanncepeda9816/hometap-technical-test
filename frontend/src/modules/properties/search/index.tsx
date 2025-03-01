@@ -1,7 +1,10 @@
+import { LoadingComponent } from "../../../components/loading";
+import { ResultsTable } from "../../../components/results-table";
 import { useSearch } from "../../../hooks/useSearch";
 
 export const SearchPropertiesScreen = () => {
-  const { searchTerm, apiResponse, setSearchTerm, handleSearch } = useSearch();
+  const { searchTerm, apiResponse, loading, setSearchTerm, handleSearch } =
+    useSearch();
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
@@ -18,15 +21,20 @@ export const SearchPropertiesScreen = () => {
         />
         <button
           onClick={handleSearch}
-          className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600"
+          className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 cursor-pointer"
+          disabled={loading}
         >
           Search
         </button>
       </div>
+      {loading && <LoadingComponent />}
+
       {apiResponse && (
-        <div className="mt-6 bg-gray-200 p-4 rounded-md w-full max-w-xl text-left">
-          <pre>{JSON.stringify(apiResponse, null, 2)}</pre>
-        </div>
+        <ResultsTable
+          propertyData={apiResponse}
+          address={searchTerm}
+          error={""}
+        />
       )}
     </div>
   );
