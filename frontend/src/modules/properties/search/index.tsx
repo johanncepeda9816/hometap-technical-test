@@ -21,6 +21,12 @@ export const SearchPropertiesScreen = () => {
             placeholder="Enter full address, including street, city, state, and zip"
             className="p-3 border border-gray-300 rounded-md w-full"
             disabled={loading}
+            aria-label="Search input"
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleSearch();
+              }
+            }}
           />
           <button
             onClick={handleSearch}
