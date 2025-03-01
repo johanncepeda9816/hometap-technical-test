@@ -46,7 +46,7 @@ The application exposes a single endpoint using the GET method to retrieve the p
 
 <div align="center">
 <video width="600" controls>
-    <source src="./assets/demo.mp4" type="video/mp4">
+    <source src="[./assets/demo.mp4](https://github.com/johanncepeda9816/hometap-technical-test/blob/main/assets/demo.mp4)" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 </div>
