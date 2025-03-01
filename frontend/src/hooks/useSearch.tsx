@@ -38,7 +38,6 @@ export const useSearch = () => {
       console.error("Error fetching property details:", error);
       setApiResponse(null);
 
-      // Show a more specific error message if available
       if (error instanceof Error) {
         toast.error(`Error searching: ${error.message}`);
       } else {
