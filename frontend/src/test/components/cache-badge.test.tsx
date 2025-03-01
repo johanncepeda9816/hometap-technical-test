@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
-import { CacheBadge } from "./cache-badge";
+import { CacheBadge } from "../../components/cache-badge";
 import "@testing-library/jest-dom";
 
 describe("CacheBadge", () => {
