@@ -31,3 +31,682 @@ Cached data content: [
 ]
 Cached result from provider: Provider 1
 Cached result from provider: Provider 2
+Processing request for address: 123 Main St
+Cache miss for property:5f4a75a37644f0cfef7e8973b8e4957e
+No cache found for 123 Main St. Fetching from providers...
+Starting data fetch from 2 providers for address: 123 Main St
+Processing provider: provider1
+Cache miss for property:5f4a75a37644f0cfef7e8973b8e4957e:provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Cache miss for property:5f4a75a37644f0cfef7e8973b8e4957e:provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=123+Main+St HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "123-Main-St-Unknown-UNKNOWN-00000",
+    "formattedAddress": "123 Main St Unknown UNKNOWN 00000",
+    "addressLine1": "123 Main St",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.514322,
+    "longitude": -84.029936,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareFootage": 3279,
+    "lotSizeSqFt": 5196,
+    "yearBuilt": 1962,
+    "assessorID": "89369-573-1356",
+    "legalDescription": "CB 8512 BLK 3 LOT 25",
+    "subdivision": "None",
+    "zoning": "RH",
+    "lastSaleDate": "2004-06-13T00:00:00.000Z",
+    "lastSalePrice": 340597,
+    "hoa": {
+      "fee": 394
+    },
+    "features": {
+      "architectureType": "Ranch",
+      "cooling": true,
+      "coolingType": "Window Unit",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 1,
+      "foundationType": "Slab",
+      "garage": true,
+      "garageSpaces": 2,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Radiant",
+      "pool": true,
+      "poolType": "Concrete",
+      "roofType": "Tile",
+      "roomCount": 9,
+      "unitCount": 2,
+      "viewType": "City",
+      "septicSystem": false
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 449985,
+        "land": 48936,
+        "improvements": 195584
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 8154
+      }
+    },
+    "history": {
+      "2021-09-25": {
+        "event": "Sale",
+        "date": "2016-07-19T00:00:00.000Z",
+        "price": 412153
+      }
+    }
+  },
+  "cached": false
+}
+Waiting for response from provider2 (timeout: 30s)
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=123+Main+St HTTP/1.1" 200 None
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "123-Main-St-Unknown-UNKNOWN-00000",
+    "NormalizedAddress": "123 Main St Unknown UNKNOWN 00000",
+    "Address1": "123 Main St",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Ranch",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "SquareFootage": 3279,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1962,
+    "HomeownerAssociationFee": 394,
+    "LastSaleDate": "2004-06-13T00:00:00.000Z",
+    "LastSalePrice": 340597,
+    "RoomCount": 9,
+    "UnitCount": 2,
+    "GarageSpaces": 2,
+    "GarageType": "Attached",
+    "SepticSystem": false,
+    "Cooling": "Window Unit",
+    "Heating": "Radiant",
+    "SalePrice": 340597
+  },
+  "cached": true
+}
+Completed data fetch from all providers for address: 123 Main St
+Raw result from provider1: {
+  "data": {
+    "id": "123-Main-St-Unknown-UNKNOWN-00000",
+    "formattedAddress": "123 Main St Unknown UNKNOWN 00000",
+    "addressLine1": "123 Main St",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "UNKNOWN",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.514322,
+    "longitude": -84.029936,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "squareFootage": 3279,
+    "lotSizeSqFt": 5196,
+    "yearBuilt": 1962,
+    "assessorID": "89369-573-1356",
+    "legalDescription": "CB 8512 BLK 3 LOT 25",
+    "subdivision": "None",
+    "zoning": "RH",
+    "lastSaleDate": "2004-06-13T00:00:00.000Z",
+    "lastSalePrice": 340597,
+    "hoa": {
+      "fee": 394
+    },
+    "features": {
+      "architectureType": "Ranch",
+      "cooling": true,
+      "coolingType": "Window Unit",
+      "exteriorType": "Brick",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 1,
+      "foundationType": "Slab",
+      "garage": true,
+      "garageSpaces": 2,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Radiant",
+      "pool": true,
+      "poolType": "Concrete",
+      "roofType": "Tile",
+      "roomCount": 9,
+      "unitCount": 2,
+      "viewType": "City",
+      "septicSystem": false
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 449985,
+        "land": 48936,
+        "improvements": 195584
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 8154
+      }
+    },
+    "history": {
+      "2021-09-25": {
+        "event": "Sale",
+        "date": "2016-07-19T00:00:00.000Z",
+        "price": 412153
+      }
+    }
+  },
+  "cached": false
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "123-Main-St-Unknown-UNKNOWN-00000",
+    "NormalizedAddress": "123 Main St Unknown UNKNOWN 00000",
+    "Address1": "123 Main St",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "UNKNOWN",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Ranch",
+    "PropertyType": "Condo",
+    "Bedrooms": 3,
+    "Bathrooms": 1,
+    "SquareFootage": 3279,
+    "LotSizeAcres": 0.12,
+    "YearConstructed": 1962,
+    "HomeownerAssociationFee": 394,
+    "LastSaleDate": "2004-06-13T00:00:00.000Z",
+    "LastSalePrice": 340597,
+    "RoomCount": 9,
+    "UnitCount": 2,
+    "GarageSpaces": 2,
+    "GarageType": "Attached",
+    "SepticSystem": false,
+    "Cooling": "Window Unit",
+    "Heating": "Radiant",
+    "SalePrice": 340597
+  },
+  "cached": true
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x1055f5260>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 3279,
+  "lot_size_acres": 0.12,
+  "year_built": 1962,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 1,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 340597,
+  "sale_price_formatted": "$340,597",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Cached data for property:5f4a75a37644f0cfef7e8973b8e4957e:provider1 with TTL 86400s
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 3279,
+  "lot_size_acres": 0.12,
+  "year_built": 1962,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 1,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 340597,
+  "sale_price_formatted": "$340,597",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Cached data for property:5f4a75a37644f0cfef7e8973b8e4957e:provider2 with TTL 86400s
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 3279,
+  "lot_size_acres": 0.12,
+  "year_built": 1962,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 1.0,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 340597,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 3279,
+  "lot_size_acres": 0.12,
+  "year_built": 1962,
+  "property_type": "Condo",
+  "bedrooms": 3,
+  "bathrooms": 1.0,
+  "room_count": 9,
+  "septic_system": "No",
+  "sale_price": 340597,
+  "provider": "Provider 2",
+  "cached": false
+}
+Cached data for property:5f4a75a37644f0cfef7e8973b8e4957e with TTL 86400s
+Bad Request: /properties
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2_service.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2_service.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 10s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2_service.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1_service.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 10s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Received response from provider1
+Raw response from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Error initializing service for provider1: Test exception
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Error initializing service for provider2: Test exception
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Starting data fetch from 2 providers for address: 123 Test Street, City, State
+Processing provider: provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Timeout while fetching data from provider1
+Waiting for response from provider2 (timeout: 30s)
+Timeout while fetching data from provider2
+Completed data fetch from all providers for address: 123 Test Street, City, State
+Processing request for address: 123 Test Street, City, State
+No cache found for 123 Test Street, City, State. Fetching from providers...
+Raw result from provider1: {
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2
+}
+Raw result from provider2: {
+  "property_address": "123 Test Street, City, State",
+  "list_price": 520000,
+  "bed_count": 3,
+  "bath_count": 2.5
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x102dfafc0>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "provider": "provider1",
+  "address": "123 Test Street, City, State",
+  "price": 500000,
+  "bedrooms": 3,
+  "bathrooms": 2,
+  "cached": false
+}
+Data from provider1 successfully validated
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "provider": "provider2",
+  "address": "123 Test Street, City, State",
+  "price": 520000,
+  "bedrooms": 3,
+  "bathrooms": 2.5,
+  "cached": false
+}
+Data from provider2 successfully validated
+Total providers processed: 2
+Final data from provider provider1: {
+  "bedrooms": 3,
+  "bathrooms": 2.0,
+  "provider": "provider1",
+  "cached": false
+}
+Final data from provider provider2: {
+  "bedrooms": 3,
+  "bathrooms": 2.5,
+  "provider": "provider2",
+  "cached": false
+}
