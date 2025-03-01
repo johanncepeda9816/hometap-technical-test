@@ -35,7 +35,7 @@ export const ResultsTable = ({ propertyData, address }: ResultsTableProps) => {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden w-full">
       <div className="px-4 py-5 sm:px-6 bg-gray-50 border-b border-gray-200">
         <h3 className="text-lg font-medium leading-6 text-gray-900">
           Property Details for {address}
@@ -69,16 +69,16 @@ export const ResultsTable = ({ propertyData, address }: ResultsTableProps) => {
               <div className="divide-y">
                 {fieldGroups.map((group, groupIndex) => (
                   <div key={groupIndex} className="px-4 py-3">
-                    <h5 className="text-sm font-medium text-gray-500 mb-2">
+                    <h5 className="text-sm font-medium text-black-500 mb-2">
                       {group.title}
                     </h5>
-                    <dl className="grid grid-cols-2 gap-x-4 gap-y-2">
+                    <dl className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                       {group.fields.map((field, fieldIndex) => (
-                        <div key={fieldIndex} className="col-span-2">
-                          <dt className="text-sm font-medium text-gray-500">
+                        <div key={fieldIndex} className="flex flex-col">
+                          <dt className="text-sm font-medium text-gray-500 mb-1">
                             {field.label}
                           </dt>
-                          <dd className="mt-1 text-sm text-gray-900">
+                          <dd className="text-sm text-gray-900">
                             {renderFieldValue(item, field)}
                           </dd>
                         </div>

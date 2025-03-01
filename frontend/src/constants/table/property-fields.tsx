@@ -28,16 +28,6 @@ const fieldGroups = [
       },
     ],
   },
-  {
-    title: "Metadata",
-    fields: [
-      {
-        key: "cached",
-        label: "From Cache",
-        formatter: (value: string) => (value ? "Yes" : "No"),
-      },
-    ],
-  },
 ];
 
 export { fieldGroups };
