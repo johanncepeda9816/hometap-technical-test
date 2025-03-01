@@ -710,3 +710,582 @@ Final data from provider provider2: {
   "provider": "provider2",
   "cached": false
 }
+Watching for file changes with StatReloader
+Processing request for address: Hi
+Cache miss for property:49f68a5c8493ec2c0bf489821c21fc3b
+No cache found for Hi. Fetching from providers...
+Starting data fetch from 2 providers for address: Hi
+Processing provider: provider1
+Cache miss for property:49f68a5c8493ec2c0bf489821c21fc3b:provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Cache miss for property:49f68a5c8493ec2c0bf489821c21fc3b:provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=Hi HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "-Unknown-HI-00000",
+    "formattedAddress": " Unknown HI 00000",
+    "addressLine1": "",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "HI",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.152944,
+    "longitude": -84.973908,
+    "propertyType": "Condo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFootage": 2962,
+    "lotSizeSqFt": 8352,
+    "yearBuilt": 1919,
+    "assessorID": "35136-114-4891",
+    "legalDescription": "CB 4130 BLK 4 LOT 62",
+    "subdivision": "Subdivision A",
+    "zoning": "RS",
+    "lastSaleDate": "2011-11-26T00:00:00.000Z",
+    "lastSalePrice": 495410,
+    "hoa": {
+      "fee": 216
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Window Unit",
+      "exteriorType": "Wood",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 3,
+      "foundationType": "Crawl Space",
+      "garage": true,
+      "garageSpaces": 3,
+      "garageType": "Detached",
+      "heating": true,
+      "heatingType": "Electric",
+      "pool": false,
+      "poolType": "Vinyl",
+      "roofType": "Metal",
+      "roomCount": 10,
+      "unitCount": 3,
+      "viewType": "Mountain",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 447873,
+        "land": 64149,
+        "improvements": 228477
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 6375
+      }
+    },
+    "history": {
+      "2020-10-07": {
+        "event": "Sale",
+        "date": "2021-01-18T00:00:00.000Z",
+        "price": 194046
+      }
+    }
+  },
+  "cached": false
+}
+Waiting for response from provider2 (timeout: 30s)
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=Hi HTTP/1.1" 200 None
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "-Unknown-HI-00000",
+    "NormalizedAddress": " Unknown HI 00000",
+    "Address1": "",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "HI",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "SquareFootage": 2962,
+    "LotSizeAcres": 0.19,
+    "YearConstructed": 1919,
+    "HomeownerAssociationFee": 216,
+    "LastSaleDate": "2011-11-26T00:00:00.000Z",
+    "LastSalePrice": 495410,
+    "RoomCount": 10,
+    "UnitCount": 3,
+    "GarageSpaces": 3,
+    "GarageType": "Detached",
+    "SepticSystem": true,
+    "Cooling": "Window Unit",
+    "Heating": "Electric",
+    "SalePrice": 495410
+  },
+  "cached": true
+}
+Completed data fetch from all providers for address: Hi
+Raw result from provider1: {
+  "data": {
+    "id": "-Unknown-HI-00000",
+    "formattedAddress": " Unknown HI 00000",
+    "addressLine1": "",
+    "addressLine2": "Apt 12",
+    "city": "Unknown",
+    "state": "HI",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.152944,
+    "longitude": -84.973908,
+    "propertyType": "Condo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "squareFootage": 2962,
+    "lotSizeSqFt": 8352,
+    "yearBuilt": 1919,
+    "assessorID": "35136-114-4891",
+    "legalDescription": "CB 4130 BLK 4 LOT 62",
+    "subdivision": "Subdivision A",
+    "zoning": "RS",
+    "lastSaleDate": "2011-11-26T00:00:00.000Z",
+    "lastSalePrice": 495410,
+    "hoa": {
+      "fee": 216
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Window Unit",
+      "exteriorType": "Wood",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 3,
+      "foundationType": "Crawl Space",
+      "garage": true,
+      "garageSpaces": 3,
+      "garageType": "Detached",
+      "heating": true,
+      "heatingType": "Electric",
+      "pool": false,
+      "poolType": "Vinyl",
+      "roofType": "Metal",
+      "roomCount": 10,
+      "unitCount": 3,
+      "viewType": "Mountain",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 447873,
+        "land": 64149,
+        "improvements": 228477
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 6375
+      }
+    },
+    "history": {
+      "2020-10-07": {
+        "event": "Sale",
+        "date": "2021-01-18T00:00:00.000Z",
+        "price": 194046
+      }
+    }
+  },
+  "cached": false
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "-Unknown-HI-00000",
+    "NormalizedAddress": " Unknown HI 00000",
+    "Address1": "",
+    "Address2": "Apt 12",
+    "City": "Unknown",
+    "State": "HI",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Condo",
+    "Bedrooms": 2,
+    "Bathrooms": 2,
+    "SquareFootage": 2962,
+    "LotSizeAcres": 0.19,
+    "YearConstructed": 1919,
+    "HomeownerAssociationFee": 216,
+    "LastSaleDate": "2011-11-26T00:00:00.000Z",
+    "LastSalePrice": 495410,
+    "RoomCount": 10,
+    "UnitCount": 3,
+    "GarageSpaces": 3,
+    "GarageType": "Detached",
+    "SepticSystem": true,
+    "Cooling": "Window Unit",
+    "Heating": "Electric",
+    "SalePrice": 495410
+  },
+  "cached": true
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x107d6c720>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 2962,
+  "lot_size_acres": 0.19,
+  "year_built": 1919,
+  "property_type": "Condo",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "room_count": 10,
+  "septic_system": "Yes",
+  "sale_price": 495410,
+  "sale_price_formatted": "$495,410",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Cached data for property:49f68a5c8493ec2c0bf489821c21fc3b:provider1 with TTL 86400s
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 2962,
+  "lot_size_acres": 0.19,
+  "year_built": 1919,
+  "property_type": "Condo",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "room_count": 10,
+  "septic_system": "Yes",
+  "sale_price": 495410,
+  "sale_price_formatted": "$495,410",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Cached data for property:49f68a5c8493ec2c0bf489821c21fc3b:provider2 with TTL 86400s
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 2962,
+  "lot_size_acres": 0.19,
+  "year_built": 1919,
+  "property_type": "Condo",
+  "bedrooms": 2,
+  "bathrooms": 2.0,
+  "room_count": 10,
+  "septic_system": "Yes",
+  "sale_price": 495410,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 2962,
+  "lot_size_acres": 0.19,
+  "year_built": 1919,
+  "property_type": "Condo",
+  "bedrooms": 2,
+  "bathrooms": 2.0,
+  "room_count": 10,
+  "septic_system": "Yes",
+  "sale_price": 495410,
+  "provider": "Provider 2",
+  "cached": false
+}
+Cached data for property:49f68a5c8493ec2c0bf489821c21fc3b with TTL 86400s
+Processing request for address: New york
+Cache miss for property:5cbe8b23c1f9a1459e1407e3e82d7038
+No cache found for New york. Fetching from providers...
+Starting data fetch from 2 providers for address: New york
+Processing provider: provider1
+Cache miss for property:5cbe8b23c1f9a1459e1407e3e82d7038:provider1
+Initializing service class for provider1: properties.services.provider1.Provider1Service
+Submitting request to provider1
+Processing provider: provider2
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+Cache miss for property:5cbe8b23c1f9a1459e1407e3e82d7038:provider2
+Initializing service class for provider2: properties.services.provider2.Provider2Service
+Submitting request to provider2
+Waiting for response from provider1 (timeout: 30s)
+Starting new HTTPS connection (1): property-detail-api.fly.dev:443
+https://property-detail-api.fly.dev:443 "GET /provider-2/property?address=New+york HTTP/1.1" 200 None
+https://property-detail-api.fly.dev:443 "GET /provider-1/property?address=New+york HTTP/1.1" 200 None
+Received response from provider1
+Raw response from provider1: {
+  "data": {
+    "id": "-Unknown-NEW-YORK-00000",
+    "formattedAddress": " Unknown NEW YORK 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Unknown",
+    "state": "NEW YORK",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.517767,
+    "longitude": -84.005526,
+    "propertyType": "Single Family",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "squareFootage": 1849,
+    "lotSizeSqFt": 6286,
+    "yearBuilt": 2014,
+    "assessorID": "67791-711-8791",
+    "legalDescription": "CB 5644 BLK 7 LOT 49",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2013-07-11T00:00:00.000Z",
+    "lastSalePrice": 305925,
+    "hoa": {
+      "fee": 484
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Wood",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Fiberglass",
+      "roofType": "Asphalt",
+      "roomCount": 7,
+      "unitCount": 5,
+      "viewType": "Mountain",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 283602,
+        "land": 83187,
+        "improvements": 394301
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 6994
+      }
+    },
+    "history": {
+      "2016-04-24": {
+        "event": "Sale",
+        "date": "2018-06-01T00:00:00.000Z",
+        "price": 169039
+      }
+    }
+  },
+  "cached": true
+}
+Waiting for response from provider2 (timeout: 30s)
+Received response from provider2
+Raw response from provider2: {
+  "data": {
+    "ID": "-Unknown-NEW-YORK-00000",
+    "NormalizedAddress": " Unknown NEW YORK 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Unknown",
+    "State": "NEW YORK",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Single Family",
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "SquareFootage": 1849,
+    "LotSizeAcres": 0.14,
+    "YearConstructed": 2014,
+    "HomeownerAssociationFee": 484,
+    "LastSaleDate": "2013-07-11T00:00:00.000Z",
+    "LastSalePrice": 305925,
+    "RoomCount": 7,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 305925
+  },
+  "cached": false
+}
+Completed data fetch from all providers for address: New york
+Raw result from provider1: {
+  "data": {
+    "id": "-Unknown-NEW-YORK-00000",
+    "formattedAddress": " Unknown NEW YORK 00000",
+    "addressLine1": "",
+    "addressLine2": "Suite 10",
+    "city": "Unknown",
+    "state": "NEW YORK",
+    "zipCode": "00000",
+    "county": "Unknown",
+    "latitude": 35.517767,
+    "longitude": -84.005526,
+    "propertyType": "Single Family",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "squareFootage": 1849,
+    "lotSizeSqFt": 6286,
+    "yearBuilt": 2014,
+    "assessorID": "67791-711-8791",
+    "legalDescription": "CB 5644 BLK 7 LOT 49",
+    "subdivision": "Subdivision A",
+    "zoning": "RM",
+    "lastSaleDate": "2013-07-11T00:00:00.000Z",
+    "lastSalePrice": 305925,
+    "hoa": {
+      "fee": 484
+    },
+    "features": {
+      "architectureType": "Colonial",
+      "cooling": true,
+      "coolingType": "Central",
+      "exteriorType": "Wood",
+      "fireplace": false,
+      "fireplaceType": "Masonry",
+      "floorCount": 2,
+      "foundationType": "Basement",
+      "garage": true,
+      "garageSpaces": 1,
+      "garageType": "Attached",
+      "heating": true,
+      "heatingType": "Forced Air",
+      "pool": false,
+      "poolType": "Fiberglass",
+      "roofType": "Asphalt",
+      "roomCount": 7,
+      "unitCount": 5,
+      "viewType": "Mountain",
+      "septicSystem": true
+    },
+    "taxAssessments": {
+      "2023": {
+        "year": 2023,
+        "value": 283602,
+        "land": 83187,
+        "improvements": 394301
+      }
+    },
+    "propertyTaxes": {
+      "2023": {
+        "year": 2023,
+        "total": 6994
+      }
+    },
+    "history": {
+      "2016-04-24": {
+        "event": "Sale",
+        "date": "2018-06-01T00:00:00.000Z",
+        "price": 169039
+      }
+    }
+  },
+  "cached": true
+}
+Raw result from provider2: {
+  "data": {
+    "ID": "-Unknown-NEW-YORK-00000",
+    "NormalizedAddress": " Unknown NEW YORK 00000",
+    "Address1": "",
+    "Address2": "Suite 10",
+    "City": "Unknown",
+    "State": "NEW YORK",
+    "PostalCode": "00000",
+    "ArchitecturalStyle": "Colonial",
+    "PropertyType": "Single Family",
+    "Bedrooms": 1,
+    "Bathrooms": 2,
+    "SquareFootage": 1849,
+    "LotSizeAcres": 0.14,
+    "YearConstructed": 2014,
+    "HomeownerAssociationFee": 484,
+    "LastSaleDate": "2013-07-11T00:00:00.000Z",
+    "LastSalePrice": 305925,
+    "RoomCount": 7,
+    "UnitCount": 5,
+    "GarageSpaces": 1,
+    "GarageType": "Attached",
+    "SepticSystem": true,
+    "Cooling": "Central",
+    "Heating": "Forced Air",
+    "SalePrice": 305925
+  },
+  "cached": false
+}
+Processing data from provider: provider1
+Using mapping for provider1: {'square_footage': 'squareFootage', 'lot_size_acres': ('lotSizeSqFt', <function convert_sqft_to_acres at 0x107d6c720>), 'year_built': 'yearBuilt', 'property_type': 'propertyType', 'bedrooms': 'bedrooms', 'bathrooms': 'bathrooms', 'room_count': ('features', 'roomCount'), 'septic_system': ('features', 'septicSystem'), 'sale_price': 'lastSalePrice'}
+Standardized data for provider1: {
+  "square_footage": 1849,
+  "lot_size_acres": 0.14,
+  "year_built": 2014,
+  "property_type": "Single Family",
+  "bedrooms": 1,
+  "bathrooms": 2,
+  "room_count": 7,
+  "septic_system": "Yes",
+  "sale_price": 305925,
+  "sale_price_formatted": "$305,925",
+  "provider": "Provider 1"
+}
+Data from provider1 successfully validated
+Cached data for property:5cbe8b23c1f9a1459e1407e3e82d7038:provider1 with TTL 86400s
+Processing data from provider: provider2
+Using mapping for provider2: {'square_footage': 'SquareFootage', 'lot_size_acres': 'LotSizeAcres', 'year_built': 'YearConstructed', 'property_type': 'PropertyType', 'bedrooms': 'Bedrooms', 'bathrooms': 'Bathrooms', 'room_count': 'RoomCount', 'septic_system': 'SepticSystem', 'sale_price': 'SalePrice'}
+Standardized data for provider2: {
+  "square_footage": 1849,
+  "lot_size_acres": 0.14,
+  "year_built": 2014,
+  "property_type": "Single Family",
+  "bedrooms": 1,
+  "bathrooms": 2,
+  "room_count": 7,
+  "septic_system": "Yes",
+  "sale_price": 305925,
+  "sale_price_formatted": "$305,925",
+  "provider": "Provider 2"
+}
+Data from provider2 successfully validated
+Cached data for property:5cbe8b23c1f9a1459e1407e3e82d7038:provider2 with TTL 86400s
+Total providers processed: 2
+Final data from provider Provider 1: {
+  "square_footage": 1849,
+  "lot_size_acres": 0.14,
+  "year_built": 2014,
+  "property_type": "Single Family",
+  "bedrooms": 1,
+  "bathrooms": 2.0,
+  "room_count": 7,
+  "septic_system": "Yes",
+  "sale_price": 305925,
+  "provider": "Provider 1",
+  "cached": false
+}
+Final data from provider Provider 2: {
+  "square_footage": 1849,
+  "lot_size_acres": 0.14,
+  "year_built": 2014,
+  "property_type": "Single Family",
+  "bedrooms": 1,
+  "bathrooms": 2.0,
+  "room_count": 7,
+  "septic_system": "Yes",
+  "sale_price": 305925,
+  "provider": "Provider 2",
+  "cached": false
+}
+Cached data for property:5cbe8b23c1f9a1459e1407e3e82d7038 with TTL 86400s
