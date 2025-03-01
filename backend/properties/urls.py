@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import property_view
+from .views import PropertyDetailsView
 
 urlpatterns = [
-    path('', property_view, name='property_view'),
+    path('', PropertyDetailsView.as_view(), name='property_view'),
 ]
