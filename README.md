@@ -46,10 +46,20 @@ The application exposes a single endpoint using the GET method to retrieve the p
 
 <div align="center">
 <video width="600" controls>
-    <source src="./assets/demo.mp4" type="video/mp4">
+    <source src="./assets/demo.gif" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 </div>
+
+## 📊 Diagrams
+
+### Classes
+
+![System Architecture](./diagrams/classes_properties.png)
+
+### Packages
+
+![Data Flow](./diagrams/packages_properties.png)
 
 ## 🚀 Installation
 
