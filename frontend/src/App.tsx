@@ -1,23 +1,30 @@
-import React, { useState } from 'react';
-import { fetchPropertyDetails } from './services/property';
+import React, { useState } from "react";
+import { fetchPropertyDetails } from "./services/property";
+import ProviderResponse from "./types/providers";
 
 const App: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [apiResponse, setApiResponse] = useState<any>(null);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [apiResponse, setApiResponse] = useState<ProviderResponse | null>(null);
   const backendApiUrl = import.meta.env.VITE_BACKEND_API_URL;
 
   const handleSearch = async () => {
     try {
       const data = await fetchPropertyDetails(backendApiUrl, searchTerm);
       setApiResponse(data);
-    } catch (error) {
-      setApiResponse({ error: 'Failed to fetch data' });
+    } catch (error: unknown) {
+      setApiResponse({
+        error: {
+          message: (error as Error).message,
+        },
+      });
     }
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-4xl font-bold text-gray-800 mb-6">Hometap Property Detail Search</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">
+        Hometap Property Detail Search
+      </h1>
       <div className="flex items-center space-x-4 mb-4">
         <input
           type="text"
