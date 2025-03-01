@@ -67,6 +67,7 @@ This repository
 
 # Install dependencies
 cd backend
+cp .env.example .env
 poetry install
 
 # Activate virtual environment
@@ -107,10 +108,11 @@ CACHE_ENABLED = False #in your settings file
 
 ### Frontend Setup
 
-First, navigate to the frontend directory:
+First, navigate to the frontend directory and generate .env:
 
 ```bash
 cd frontend
+cp .env.example .env
 ```
 
 #### Using yarn (Recommended)
@@ -135,13 +137,14 @@ npm run dev
 
 ## 📝 API Documentation
 
-The API documentation is available at `/api/docs/` when the server is running.
+The API documentation is available at `http://127.0.0.1:8000/redoc/` or `http://127.0.0.1:8000/swagger/` when the server is running.
 
 ## 🧪 Testing
 
 ### Backend Tests
 
 ```bash
+cd backend
 python manage.py test
 ```
 
@@ -149,31 +152,44 @@ python manage.py test
 
 ```bash
 cd frontend
-npm test
+yarn test
 ```
 
-## 🤝 Contributing
+## 🔮 Future Improvements
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+This project has many potential areas for enhancement and expansion:
+
+**📈 Performance, Scaling & Security**
+
+- Implement more sophisticated caching strategies with different TTLs for various data types
+- Add Redis Cluster support for horizontal scaling
+- Incorporate rate limiting for API requests
+- Integrate Auth flow
+
+**🧰 Architecture & Features**
+
+- Integrate additional property data providers
+- Implement a provider reliability scoring system
+- Add data comparison visualization tools in the frontend (For example, highlighting the one with the lowest price)
+- Create an admin dashboard to monitor provider response times and success rates
+
+**🛠️ Developer Experience**
+
+- Enhance test coverage with end-to-end integration tests
+- Set up continuous performance monitoring
+- Create Docker Compose setup for easy local development
+
+**📱 User Experience**
+
+- Add map visualization for property locations
+- Add export functionality for property data
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👏 Acknowledgments
-
-- [List any libraries, tutorials, or resources that you found helpful]
-- [Give credit to anyone whose code was used]
-- [Inspiration sources]
-
----
-
 <div align="center">
   
-  Made with ❤️ by [Your Name](https://github.com/username)
+  Made by [Johann Cepeda](https://github.com/johanncepeda16)
   
 </div>
