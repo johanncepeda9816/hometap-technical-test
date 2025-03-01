@@ -1,8 +1,8 @@
-from backend.properties.utils.conversion import convert_sqft_to_acres
+from properties.utils.conversion import convert_sqft_to_acres
 
 PROVIDER_CONFIGS = {
     'provider1': {
-        'service_class': 'services.provider1.Provider1Service',
+        'service_class': 'properties.services.provider1.Provider1Service',
         'timeout': 30,  # seconds
         'mapping': {
             'square_footage': 'squareFootage',
@@ -17,7 +17,7 @@ PROVIDER_CONFIGS = {
         }
     },
     'provider2': {
-        'service_class': 'services.provider2.Provider2Service',
+        'service_class': 'properties.services.provider2.Provider2Service',
         'timeout': 30,  # seconds
         'mapping': {
             'square_footage': 'SquareFootage',
