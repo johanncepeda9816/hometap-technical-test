@@ -12,7 +12,9 @@ export const fetchPropertyDetails = async (
     const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error(
+        `Failed to fetch property details for address ${address}`
+      );
     }
 
     return await response.json();
